@@ -1,0 +1,63 @@
+/* ---------------------------------------------reservation-------------------------------------------------- */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* 
+
+html {
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('train.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+
+.signup-form{
+    height:500px;
+    width:600px;
+    /* margin: auto; */
+    margin-left:25%;
+    margin-top:20px;
+    border: 2px solid green;
+    color:aliceblue;
+}
+
+.Signup-head{
+    padding:8px;
+    text-align:center;
+}
+.signup-content .radio{
+    margin:10px 10px;
+}
+.signup-content2 .input{
+    width:400px;
+    padding:10px;
+    margin:10px;
+    color:#fff;
+}
+.signup-content2 .tarikh{
+    margin:10px;
+    padding:10px;
+    color:#fff;
+}
+.signup-content2  .person{
+    padding:10px;
+    margin:10px;
+    color:#fff;
+}
+.signup-content2 .travel{
+    margin:20px 20px;
+}
+.signup-content2 .travel2{
+    padding:5px;
+}
+.signup-content2 .submit-btn{
+    border:none;
+    outline:none;
+    width:200px;
+    padding:10px;
+    margin-left:200px;
+}
+

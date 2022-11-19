@@ -1,0 +1,490 @@
+ /* ----------------------------------------Home page --------------------------------------------------------*/
+
+ *{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.db{
+	border: 2px red solid;
+}
+
+html {
+	background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('../img/train.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	width: 180px;
+	cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0px 5px;
+	position: relative; 
+	padding: 7px;
+	cursor: pointer;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 6px;
+	cursor: pointer;
+}
+
+.navbar ul li::after{ 
+	content: '';  
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+	width: 100%; 
+}
+
+.content{
+	width: 100%;
+	position: absolute;
+	top: 55%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: #fff; 
+	/* border:1px solid yellow; */
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;	
+}
+
+.content h2{
+	font-size: 30px;
+	margin-top: 80px;
+}
+
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid #009688;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+span{
+	background: #009688;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition: 0.5s;
+}
+
+button:hover span{
+	width: 100%;
+}
+
+button:hover{
+	border: none;	
+}
+
+          /*------------------------------------- login and signup --------------------------------------*/     
+form
+{
+	width: 50%;
+	text-align: left;
+	margin-left: 35%;
+	/* margin-top:10%; */
+}
+
+.form label
+{
+	color: aqua;
+	font-size: 18px;
+	font-weight: 500;
+	margin-left: -20%;
+}
+
+.form input, select, textarea
+{
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: 500;
+	background-color: rgba(124, 117, 117, 0.693);
+	outline: none;
+	width: 70%;
+	height: 30px;
+	border-radius: 5px;
+	margin-left: -5%;
+	/* border: 2px solid green; */
+}
+           
+.form__text{
+    text-align:center;
+}
+
+.form__link{
+    color:#4747f6;
+    text-decoration:none;
+    cursor:pointer;
+	}
+
+.form__link:hover{
+    text-decoration:underline;
+}	
+
+
+
+/* --------------------------------------------------------Time table------------------------------------------ */
+
+th{
+	color:aliceblue;
+}
+
+.t1 h1{
+	font-size: 70px;
+	margin-top: 30px;
+	margin-bottom:20px;
+	color:aliceblue;
+	text-align:center;	
+}
+
+.t1 h2{
+	font-size: 30px;
+	margin-top: 30px;
+	margin-bottom:20px;
+	color:aliceblue;
+	text-align:left;
+	font-family:serif;	
+}
+
+.table {
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	font-weight: 100;
+	font-size: 20px;
+  }
+  
+.table td, th {
+	/* border: 1px solid rgb(0, 0, 0); */
+	padding: 8px;
+	color:#ddd;
+	
+  }
+  
+
+  
+/* .table tr:hover {background-color:#201c1c;} */ */
+  
+.table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align:left;
+	background-color:#009688;
+	color: white;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+	background-color: #6ab30b;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: #059524;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	margin-left: 14%;
+	background-color: #81efe6;
+	width: 960px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	
+  }
+  
+  .dropdown-content a {
+	color: black;
+	padding: 10px 16px;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	width: 120px;
+	border: 2px solid rgba(0, 0, 0, 0.167);
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+
+/* ---------------------------------------------Train & Our Services------------------------------------------------------------- */
+h2{
+	color:white;
+	text-align: center;
+	font-size:70px;
+	margin-bottom:20px;
+}
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:'Poppins',sans-serif;
+}
+
+.body2{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	color: white;
+}
+
+.container{
+	width:1100px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+}
+
+.container .box{
+	position:relative;
+	width:320px;
+	background:(3, 236, 108, 0.705);
+	padding:100px 40px 60px;
+	box-shadow:0 15px 45px rgba(253, 246, 246, 0.1);
+	margin-bottom:20px;
+	border-radius: 15px;
+	border:1px solid #07db04fd;
+}
+
+.container .box:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#07db04fd;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.5s;
+	border-radius: 15px;
+}
+
+.container .box:hover:before{
+	transform: scaleY(1);
+	transform-origin:bottom;
+	transition: transform 0.5s;
+	border-radius: 15px;
+}
+
+.container .box h3{
+	font-size: 40px;
+	position:absolute;
+	left:40px;
+	top:60px;
+	font-size:4em;
+	font-weight:800;
+	z-index:1;
+	opacity:0.5;
+	transition:0.5s;
+}
+
+.container .box:hover h3{
+	opacity:1;
+	color:#fff;
+	transform:translateY(-40px);
+}
+
+.container .box h4{
+	position:relative;
+	font-size:1.5em;
+	z-index:2;
+	color:#333;
+	transition:0.5s;
+}
+
+.container .box p{
+	position:relative;
+	font-size:1.5em;
+	z-index:2;
+	color:#333;
+	transition:0.5s;
+}
+
+.form_btn{
+	align-items: center;
+	margin-left: 45%;;
+}
+
+/* --------------------------------------------------Contacts--------------------------------------------------- */
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "montserrat",sans-serif;
+	box-sizing: border-box;
+  }
+
+  .contact-info{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+  }
+  
+  .card{
+	background: #2f3542;
+	padding: 0 20px;
+	margin: 0 10px;
+	width: calc(33% - 20px);
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	cursor: pointer;
+  }
+  
+  .card-icon{
+	font-size: 28px;
+	background: #ff6348;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+  }
+  
+  .card:hover .card-icon{
+	background: none;
+	color: #ff6348;
+	transform: scale(1.6);
+  }
+  
+  .card p{
+	margin-top: 20px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	max-height: 0;
+	opacity: 0;
+	transition: 0.3s linear;
+  }
+  
+  .card:hover p{
+	max-height: 40px;
+	opacity: 1;
+  }
+  
+  
+  @media screen and (max-width:800px) {
+	.contact-info{
+	  flex-direction: column;
+	}
+	.card{
+	  width: 100%;
+	  max-width: 300px;
+	  margin: 10px 0;
+	}
+  }
+  
+
+/* -----------------------------------------Reservation--------------------------------------------------------------- */
+
+.signup-form{
+    height:500px;
+    width:600px;
+    /* margin: auto; */
+    /* margin-right:25%; */
+    margin-top:50px;
+    border: 2px solid green;
+	color:white;
+	align-content: center;
+	align-items: center;
+}
+/* 
+.Signup-head{
+    padding:8px;
+    text-align:center;
+}
+.signup-content .radio{
+    margin:10px 10px;
+}
+.signup-content2 .input{
+    width:400px;
+    padding:10px;
+    margin:10px;
+    color:#fff;
+}
+.signup-content2 .tarikh{
+    margin:10px;
+    padding:10px;
+    color:#fff;
+}
+.signup-content2  .person{
+    padding:10px;
+    margin:10px;
+    color:#fff;
+}
+.signup-content2 .travel{
+    margin:20px 20px;
+}
+.signup-content2 .travel2{
+    padding:5px;
+}
+.signup-content2 .submit-btn{
+    border:none;
+    outline:none;
+    width:200px;
+    padding:10px;
+    margin-left:200px;
+} */
+
+

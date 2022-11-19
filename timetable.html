@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width," initial-scale=1.0">
+	<title>Online Train Ticket Booking System</title>
+	<link rel="Stylesheet" href="./style/style.css">
+</head>
+
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<img src="./img/train logo.jpg" class="logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sign up.html">Login</a></li>
+				<li><a href="timetable.html">Train Timetable</a></li>
+				<li><a href="train.html">Our Services</a></li>
+				<li><a href="contacts.html">Contact</a></li>
+			</ul>
+		</div>
+		<div class="t1">
+			<h1>Train Timetable</h1>
+			<h2>Main Line</h2>
+			<table class="table">
+				<tr>
+					<th>Train Name</th>
+					<th>From</th>
+					<th>Departure</th>
+					<th>To</th>
+					<th>Arrival</th>
+
+				</tr>
+				<tr>
+					<td>Podi Menike</td>
+					<td>Colombo Fort</td>
+					<td>05:55</td>
+					<td>Badulla</td>
+					<td>16:00</td>
+
+				</tr>
+				<tr>
+					<td>Podi Menike</td>
+					<td>Badulla</td>
+					<td>08:50</td>
+					<td>Colombo Fort</td>
+					<td>19:30</td>
+
+				</tr>
+				<tr>
+					<td>Udarata Menike</td>
+					<td>Colombo Fort</td>
+					<td>09:45</td>
+					<td>Badulla</td>
+					<td>19:45</td>
+
+				</tr>
+				<tr>
+					<td>Udarata Menike</td>
+					<td>Badulla</td>
+					<td>05:45</td>
+					<td>Colombo Fort</td>
+					<td>15:40</td>
+
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+					<td>Colombo Fort</td>
+					<td>20:00</td>
+					<td>Badulla</td>
+					<td>07:10</td>
+
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+					<td>Badulla</td>
+					<td>18:00</td>
+					<td>Colombo Fort</td>
+					<td>05:15</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Colombo Fort</td>
+					<td>12:40</td>
+					<td>Hatton</td>
+					<td>19:52</td>
+
+				</tr>
+				<tr>
+					<td>Express (A)</td>
+					<td>Colombo Fort</td>
+					<td>10:35</td>
+					<td>Matale</td>
+					<td>13:52</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Matale</td>
+					<td>05:15</td>
+					<td>Colombo Fort</td>
+					<td>09:45</td>
+
+				</tr>
+				<tr>
+					<td>Express (A)</td>
+					<td>Kandy</td>
+					<td>15:30</td>
+					<td>Colombo Fort</td>
+					<td>18:55</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Kandy</td>
+					<td>10:25</td>
+					<td>Colombo Fort</td>
+					<td>13:40</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Colombo Fort</td>
+					<td>16:35</td>
+					<td>Kandy</td>
+					<td>19:42</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Matara</td>
+					<td>13:10</td>
+					<td>Colombo Fort</td>
+					<td>17:14</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Colombo Fort</td>
+					<td>17:45</td>
+					<td>Kandy</td>
+					<td>20:58</td>
+
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Kandy</td>
+					<td>05:00</td>
+					<td>Colombo Fort</td>
+					<td>08:17</td>
+
+				</tr>
+			</table>
+
+			<div class="dropdown">
+				<button class="dropbtn" id="btn1">All trains will stop at the following Stations</button>
+				<div id="text1" class="dropdown-content">
+					<a href="#">Ragama</a>
+					<a href="#">Gampaha</a>
+					<a href="#">Veyangoda</a>
+					<a href="#">Mirigama</a>
+					<a href="#">Polgahawela</a>
+					<a href="#">Rabukkana</a>
+					<a href="#">Peradeniya</a>
+					<a href="#">Kandy</a>
+					<a href="#">Matale</a>
+					<a href="#">Gampola</a>
+					<a href="#">Nawalapitiya</a>
+					<a href="#">Hatton</a>
+					<a href="#">Talawakelle</a>
+					<a href="#">Nanu Oya</a>
+					<a href="#">Haputale</a>
+					<a href="#">Bandarawela</a>
+					<a href="#">Ella</a>
+					<a href="#">Badulla</a>
+
+				</div>
+				<script>
+					btn1.addEventListener("click", () => {
+					text1.style.display="block";
+					text2.style.display="none";
+					text3.style.display="none";
+					text4.style.display="none";
+					text5.style.display="none";
+					});
+
+					document.addEventListener('mouseup', function(e) {
+					let container = document.getElementById('text1');
+					if (!container.contains(e.target)) {
+						container.style.display = 'none';
+					}
+					});
+				</script>
+			</div>
+
+			<br><br>
+
+			<h2>Intercity Express Services</h2>
+			<table class="table">
+				<tr>
+					<th>Train Name</th>
+					<th>From</th>
+					<th>Departure</th>
+
+					<th>To</th>
+					<th>Arrival</th>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Colombo Fort</td>
+					<td>16:20</td>
+
+					<td>Vavuniya</td>
+					<td>20:57</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Vavuniya</td>
+					<td>05:45</td>
+
+					<td>Colombo Fort</td>
+					<td>10:19</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Colombo Fort</td>
+					<td>07:00</td>
+
+					<td>Kandy</td>
+					<td>09:34</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Kandy</td>
+					<td>15:00</td>
+
+					<td>Colombo Fort</td>
+					<td>17:35</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Colombo Fort</td>
+					<td>15:35</td>
+
+					<td>Kandy</td>
+					<td>18:08</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Kandy</td>
+					<td>06:25</td>
+
+					<td>Colombo Fort</td>
+					<td>09:00</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Colombo Fort</td>
+					<td>19:15</td>
+
+					<td>Batticaloa</td>
+					<td>04:00</td>
+				</tr>
+				<tr>
+					<td>Intercity Express</td>
+					<td>Batticaloa</td>
+					<td>20:15</td>
+
+					<td>Colombo Fort</td>
+					<td>04:52</td>
+				</tr>
+				<tr>
+					<td>Uthaya Devi (ICE)</td>
+					<td>Colombo Fort</td>
+					<td>10:30</td>
+
+					<td>Batticaloa</td>
+					<td>18:25&nbsp;</td>
+				</tr>
+				<tr>
+					<td>Uthaya Devi (ICE)</td>
+					<td>Batticaloa</td>
+					<td>07:45</td>
+
+					<td>Colombo Fort</td>
+					<td>15:40</td>
+				</tr>
+				<tr>
+					<td>Yal Devi (ICE)</td>
+					<td>Colombo Fort</td>
+					<td>05:45</td>
+
+					<td>Vavuniya</td>
+					<td>10:07</td>
+				</tr>
+				<tr>
+					<td>Yal Devi (ICE)</td>
+					<td>Vavuniya</td>
+					<td>15:30</td>
+
+					<td>Colombo Fort</td>
+					<td>20:35</td>
+				</tr>
+			</table>
+
+			<div class="dropdown">
+				<button class="dropbtn" id="btn2">All trains will stop at the following Stations</button>
+				<div id="text2" class="dropdown-content">
+					<a href="#">Ragama</a>
+					<a href="#">Gampaha</a>
+					<a href="#">Veyangoda</a>
+					<a href="#">Mirigama</a>
+					<a href="#">Polgahawela</a>
+					<a href="#">Rabukkana</a>
+					<a href="#">Peradeniya</a>
+					<a href="#">Kandy</a>
+					<a href="#">Matale</a>
+					<a href="#">Gampola</a>
+					<a href="#">Nawalapitiya</a>
+					<a href="#">Hatton</a>
+					<a href="#">Talawakelle</a>
+					<a href="#">Nanu Oya</a>
+					<a href="#">Haputale</a>
+					<a href="#">Bandarawela</a>
+					<a href="#">Ella</a>
+					<a href="#">Badulla</a>
+
+				</div>
+				<script>
+					btn2.addEventListener("click", () => {
+					text1.style.display="none";
+					text2.style.display="block";
+					text3.style.display="none";
+					text4.style.display="none";
+					text5.style.display="none";
+					});
+
+					document.addEventListener('mouseup', function(e) {
+					let container = document.getElementById('text2');
+					if (!container.contains(e.target)) {
+						container.style.display = 'none';
+					}
+					});
+				</script>
+			</div>
+
+			<br><br>
+
+			<h2>Costal Line</h2>
+			<table class="table">
+				<tr>
+					<th>Train Name</th>
+					<th>From</th>
+					<th>Departure</th>
+
+					<th>To</th>
+					<th>Arrival</th>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Colombo Fort</td>
+					<td>08:35</td>
+
+					<td>Matara</td>
+					<td>12:27</td>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Colombo Fort</td>
+					<td>06:55</td>
+
+					<td>Matara</td>
+					<td>11:17</td>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+					<td>Matara</td>
+					<td>14:05</td>
+
+					<td>Colombo Fort</td>
+					<td>18:45</td>
+				</tr>
+				<tr>
+					<td>Galu Kumari</td>
+					<td>Maradana</td>
+					<td>13:40</td>
+
+					<td>Matara</td>
+					<td>18:25</td>
+				</tr>
+				<tr>
+					<td>Galu Kumari</td>
+					<td>Matara</td>
+					<td>05:50</td>
+
+					<td>Maradana</td>
+					<td>10:05</td>
+				</tr>
+				<tr>
+					<td>Ruhunu Kumari</td>
+					<td>Maradana</td>
+					<td>15:40</td>
+
+					<td>Matara</td>
+					<td>19:15</td>
+				</tr>
+				<tr>
+					<td>Ruhunu Kumari</td>
+					<td>Matara</td>
+					<td>05:20</td>
+
+					<td>Maradana</td>
+					<td>09:05</td>
+				</tr>
+				<tr>
+					<td>Samudra Devi</td>
+					<td>Maradana</td>
+					<td>17:20</td>
+
+					<td>Galle</td>
+					<td>20:05</td>
+				</tr>
+				<tr>
+					<td>Samudra Devi</td>
+					<td>Galle</td>
+					<td>05:00</td>
+
+					<td>Maradana</td>
+					<td>08:06</td>
+				</tr>
+				<tr>
+					<td>Sangarika</td>
+					<td>Maradana</td>
+					<td>16:40</td>
+
+					<td>Matara</td>
+					<td>19:13</td>
+				</tr>
+				<tr>
+					<td>Sangarika</td>
+					<td>Matara</td>
+					<td>04:20</td>
+
+					<td>Maradana</td>
+					<td>08:20</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Maradana</td>
+					<td>17:25</td>
+
+					<td>Galle</td>
+					<td>21:10</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Maradana</td>
+					<td>18:45</td>
+
+					<td>Galle</td>
+					<td>22:55</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Galle</td>
+					<td>03:30</td>
+
+					<td>Maradana</td>
+					<td>07:07</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Galle</td>
+					<td>04:15</td>
+
+					<td>Maradana</td>
+					<td>07:50</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Galle</td>
+					<td>09:00</td>
+
+					<td>Maradana</td>
+					<td>13:35</td>
+				</tr>
+				<tr>
+					<td>Normal (B)</td>
+					<td>Maradana</td>
+					<td>17:50</td>
+
+					<td>Matara</td>
+					<td>22:07</td>
+				</tr>
+			</table>
+
+			<div class="dropdown">
+				<button id="btn3" class="dropbtn">All trains will stop at the following Stations</button>
+				<div id="text3" class="dropdown-content">
+					<a href="#">Bambalapitiya</a>
+					<a href="#">Dehiwela</a>
+					<a href="#">Moratuwa</a>
+					<a href="#">Panadura</a>
+					<a href="#">Kalutara</a>
+					<a href="#">Beruwala</a>
+					<a href="#">Alutgama</a>
+					<a href="#">Kosgoda</a>
+					<a href="#">Balapitiya</a>
+					<a href="#">Ambalangoda</a>
+					<a href="#">Hikkaduwa</a>
+					<a href="#">Galle</a>
+					<a href="#">Talpe</a>
+					<a href="#">Koggal</a>
+					<a href="#">Ahangama</a>
+					<a href="#">Weligama</a>
+					<a href="#">Kamburugamuva</a>
+					<a href="#">Matara</a>
+
+				</div>
+				<script>
+					btn3.addEventListener("click", () => {
+					text1.style.display="none";
+					text2.style.display="none";
+					text3.style.display="block";
+					text4.style.display="none";
+					text5.style.display="none";
+					});
+
+					document.addEventListener('mouseup', function(e) {
+					let container = document.getElementById('text3');
+					if (!container.contains(e.target)) {
+						container.style.display = 'none';
+					}
+					});
+				</script>
+			</div>
+
+			<br><br>
+
+			<h2>Northern Line</h2>
+			<table class="table">
+				<tr>
+					<th width="115">Train Name</th>
+					<th width="90">From</th>
+					<th width="96">Departure</th>
+					<th width="93">To</th>
+
+					<th width="82">Arrival</th>
+				</tr>
+				<tr>
+					<td>Rajarata Rajini</td>
+					<td>Matara</td>
+					<td>09:30</td>
+					<td>Colombo Fort</td>
+
+					<td>13:20</td>
+				</tr>
+				<tr>
+					<td>Rajarata Rajini</td>
+					<td>Colombo Fort</td>
+					<td>13:45</td>
+					<td>Vavuniya</td>
+
+					<td>20:15</td>
+				</tr>
+				<tr>
+					<td>Rajarata Rajini</td>
+					<td>Vavuniya</td>
+					<td>03:15</td>
+					<td>Colombo Fort</td>
+
+					<td>09:55</td>
+				</tr>
+				<tr>
+					<td>Rajarata Rajini</td>
+					<td>Colombo Fort</td>
+					<td>10:30</td>
+					<td>Matara</td>
+
+					<td>14:26</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+					<td>Colombo Fort</td>
+					<td>22:00</td>
+					<td>Vavuniya</td>
+
+					<td>05:05</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+					<td>Vavuniya</td>
+					<td>22:00</td>
+					<td>Colombo Fort</td>
+
+					<td>04:45</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Colombo Fort</td>
+					<td>08:45</td>
+					<td>Anuradhapura</td>
+
+					<td>14:10</td>
+				</tr>
+				<tr>
+					<td>Normal (C)</td>
+					<td>Anuradhapura</td>
+					<td>08:40</td>
+					<td>Colombo Fort</td>
+
+					<td>14:00</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+
+				</tr>
+				</table>
+
+				<div class="dropdown">
+					<button id="btn4" class="dropbtn">All trains will stop at the following Stations</button>
+					<div id="text4" class="dropdown-content">
+						<a href="#">Maradana</a>
+						<a href="#">Ragama</a>
+						<a href="#">Ganemulla</a>
+						<a href="#">Gampaha</a>
+						<a href="#">Veyangoda</a>
+						<a href="#">Mirigama</a>
+						<a href="#">Ambepusa</a>
+						<a href="#">Alawwa</a>
+						<a href="#">Polgahawela</a>
+						<a href="#">Kurunegala</a>
+						<a href="#">Wellawa</a>
+						<a href="#">Ganewatta</a>
+						<a href="#">Maho</a>
+						<a href="#">Galgamuwa</a>
+						<a href="#">Talawa</a>
+						<a href="#">Anuradhapura</a>
+						<a href="#">Madawachchi</a>
+						<a href="#">Vavuniya</a>
+	
+					</div>
+					<script>
+						btn4.addEventListener("click", () => {
+						text1.style.display="none";
+						text2.style.display="none";
+						text3.style.display="none";
+						text4.style.display="block";
+						text5.style.display="none";
+						});
+
+						document.addEventListener('mouseup', function(e) {
+						let container = document.getElementById('text4');
+						if (!container.contains(e.target)) {
+							container.style.display = 'none';
+						}
+						});
+					</script>
+				</div>
+				<br><br>
+
+			<h2>Eastern Line</h2>
+			<table class="table">
+				<tr>
+					<th>Train Name</th>
+
+					<th>From</th>
+					<th>Departure</th>
+					<th>To</th>
+					<th>Arrival</th>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+
+					<td>Colombo Fort</td>
+					<td>06:05</td>
+					<td>Trincomalee</td>
+					<td>13:55</td>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+
+					<td>Colombo Fort</td>
+					<td>06:05</td>
+					<td>Batticaloa</td>
+					<td>15:45</td>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+
+					<td>Trincomalee</td>
+					<td>10:00</td>
+					<td>Colombo Fort</td>
+					<td>19:00</td>
+				</tr>
+				<tr>
+					<td>Express (B)</td>
+
+					<td>Batticaloa</td>
+					<td>05:20</td>
+					<td>Colombo Fort</td>
+					<td>15:50</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+
+					<td>Colombo Fort</td>
+					<td>21:00</td>
+					<td>Trincomalee</td>
+					<td>05:10</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+
+					<td>Colombo Fort</td>
+					<td>21:00</td>
+					<td>Batticaloa</td>
+					<td>08:05</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+
+					<td>Trincomalee</td>
+					<td>19:00</td>
+					<td>Colombo Fort</td>
+					<td>04:15</td>
+				</tr>
+				<tr>
+					<td>Night Mail</td>
+
+					<td>Batticaloa</td>
+					<td>17:20</td>
+					<td>Colombo Fort</td>
+					<td>04:15</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+					<td>&nbsp;</td>
+				</tr>
+				</table>
+
+				<div class="dropdown">
+					<button id="btn5" class="dropbtn">All trains will stop at the following Stations</button>
+					<div id="text5" class="dropdown-content">
+						<a href="#">Maradana</a>
+						<a href="#">Ragama</a>
+						<a href="#">Ganemulla</a>
+						<a href="#">Gampaha</a>
+						<a href="#">Veyangoda</a>
+						<a href="#">Mirigama</a>
+						<a href="#">Ambepusa</a>
+						<a href="#">Alawwa</a>
+						<a href="#">Polgahawela</a>
+						<a href="#">Kurunegala</a>
+						<a href="#">Wellawa</a>
+						<a href="#">Ganewatta</a>
+						<a href="#">Maho</a>
+						<a href="#">Galgamuwa</a>
+						<a href="#">Talawa</a>
+						<a href="#">Anuradhapura</a>
+						<a href="#">Madawachchi</a>
+						<a href="#">Vavuniya</a>
+	
+					</div>
+					<script>
+						btn5.addEventListener("click", () => {
+						text1.style.display="none";
+						text2.style.display="none";
+						text3.style.display="none";
+						text4.style.display="none";
+						text5.style.display="block";
+						});
+
+						document.addEventListener('mouseup', function(e) {
+						let container = document.getElementById('text5');
+						if (!container.contains(e.target)) {
+							container.style.display = 'none';
+						}
+						});
+					</script>
+				</div>
+				<br><br>
+
+		</div>
+</body>
+
+</html>
